@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.0/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app ng-init="celsius=0">
+		<h2>Conversor ºC ºF K</h2>
+		Temperatura em Celsius: <input type="number" ng-model="celsius"><br>
+		Temperatura em Fahrenheit: {{celsius * 9/5 + 32}}<br>
+		Temperatura em Kelvin: {{celsius + 273}}<br>
+	</div>
+</body>
+</html>

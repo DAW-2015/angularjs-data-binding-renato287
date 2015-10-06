@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.0/angular.min.js"></script>
+	<style type="text/css">
+	h2 {
+		text-align: center;
+	}
+	.main {
+		max-width: 1024px;
+		margin: auto;
+	}
+	input, textarea {
+		width: 100%;
+	}
+	.formulario, .apres {
+		width: 50%;
+		margin: auto;
+	}
+	.imgdiv {
+		width: 40px;
+		margin: auto;
+	}
+
+	</style>
+</head>
+<body>
+	<div ng-app class="main">
+		<div class="formulario">
+			<h2>Cadastro</h2>
+			Nome: <input type="text" ng-model="nome"><br>
+			Cidade: <input type="text" ng-model="cidade"><br>
+			Telefone: <input type="number" ng-model="telefone" placeholder="Apenas números!"><br>
+			<br>
+			<div class="imgdiv"><img src="http://hydra-media.cursecdn.com/vindictus.gamepedia.com/8/8d/Bigby's_Bingo_Board_Number_7.png?version=498cf07935865c1308f0ea7cd453e333"></div>
+			Dígito da imagem: <input id="numero" type="number" ng-model="num"><br>
+		</div>
+		<div class="apres">
+			<h2>Ficha Cadastral <i>Preview</i></h2>
+			<fieldset>
+				Nome: {{nome}} <br>
+				Cidade: {{cidade}} <br>
+				Telefone: {{telefone}} <br>
+				Dígito verificador: {{::num}} <br>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
