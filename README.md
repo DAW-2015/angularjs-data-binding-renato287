@@ -13,4 +13,8 @@ Para cada exercício deverá ser gerado pelo menos um commit com sua respectiva 
   * 1 USD = 4.10 BRL  
   * 1 USD = 0.9 EUR
 3. **ex3.html:** Implemente um formulário que faça o preenchimento de um *review* de um produto. Esse formulário deverá conter campos para o nº de estrelas (0 a 5) e para o comentário do *review*. Ao preencher os campos, um preview do comentário deve aparecer após o formulário.
+<<<<<<< HEAD
 4. **ex4.html:** Implemente um exemplo de utilização do One-time data-binding.
+=======
+4. **ex4.html:** Implemente um exemplo de utilização do One-time data-binding.
+>>>>>>> origin/master
